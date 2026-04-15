@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!-- CSS file ko link kar rahe hain -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="form-container">
+      <h2>Register</h2>
+
+      <!-- User name ka input field -->
+      <input type="text" id="username" placeholder="User Name" />
+
+      <!-- Email ka input field -->
+      <input type="email" id="email" placeholder="Email" />
+
+      <!-- Password ka input field -->
+      <input type="password" id="password" placeholder="Password" oninput="checkPassword()" />
+
+      <!-- Password ki requirements neeche dikhana -->
+      <div class="requirements">
+        <p id="req-length">  At least 8 characters long</p>
+        <p id="req-upper">   At least one capital letter (A-Z)</p>
+        <p id="req-lower">   At least one small letter (a-z)</p>
+        <p id="req-number">  At least one number (0-9)</p>
+        <p id="req-special"> At least one special character (!@#$...)</p>
+      </div>
+
+      <!-- Submit button - inline CSS se blue color diya -->
+      <button id="submit-btn" style="background-color: blue; color: white;" onclick="submitForm()">
+        Register
+      </button>
+
+    </div>
+
+    <!-- JavaScript file ko link kar rahe hain -->
+    <script src="script.js"></script>
+  </body>
+</html>
